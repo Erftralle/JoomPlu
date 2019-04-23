@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<changelog>
+<release version="3.2.0" published="20190326">
+    <entries date="20190326">
+      <logentry type="^">Change update server to new website</logentry>
+    </entries>
+    <entries date="20180918">
+      <logentry type="+">Set default for alignment</logentry>
+      <logentry type="+">New option to load all images of the category</logentry>
+      <logentry type="+">Add new sort options</logentry>
+    </entries>
+    <entries date="20180914">
+      <logentry type="#">Fix php7 deprecated warning</logentry>
+      <logentry type="+">Allow dashes in joomplu parameter expressions</logentry>
+    </entries>
+  </release>
+</changelog>
