@@ -573,7 +573,7 @@ class plgContentJoomPlu extends JPlugin
    * @return  string
    * @since   3.0
    */
-  protected function route(&$matches)
+  protected function route($matches)
   {
     $url   = $matches[1].'option='._JOOM_OPTION.$matches[2].$this->_interface->getAmbit()->getItemid();
     $url   = str_replace('&amp;', '&', $url);
