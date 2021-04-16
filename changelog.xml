@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <changelog>
-<release version="3.2.0" published="20190326">
+  <release version="3.2.1" published="20210416">
+    <entries date="20210415">
+      <logentry type="#">[PHP8] Fix warning in frontend"></logentry>
+      <logentry type="^">Update file header and fix code style"></logentry>
+    </entries>  
+  </release>
+  <release version="3.2.0" published="20190326">
     <entries date="20190326">
       <logentry type="^">Change update server to new website</logentry>
     </entries>
