@@ -1,12 +1,12 @@
 <?php
-// $HeadURL: https://joomgallery.org/svn/joomgallery/JG-3/Plugins/JoomContentPlu/trunk/joomplu.php $
-// $Id: joomplu.php 4262 2013-05-06 22:15:27Z chraneco $
 /******************************************************************************\
 **   JoomGallery Content Plugin 'JoomPlu' 1.5                                 **
 **   By: JoomGallery::ProjectTeam                                             **
 **   Copyright (C) 2009 - 2011  Patrick Alt                                   **
+**   Copyright (C) 2011 - 2021  JoomGallery::ProjectTeam                      **
 **   Released under GNU GPL Public License                                    **
-**   License: http://www.gnu.org/copyleft/gpl.html                            **
+**   License: http://www.gnu.org/copyleft/gpl.html or have a look             **
+**   at administrator/components/com_joomgallery/LICENSE.TXT                  **
 \******************************************************************************/
 
 // Check to ensure this file is included in Joomla!
@@ -451,8 +451,8 @@ class plgContentJoomPlu extends JPlugin
     }
 
     // Route image source links
-		$regex = '#src="index.php\?([^"]*)option='._JOOM_OPTION.'([^"]*)#m';
-		$article->text = preg_replace_callback($regex, array($this, 'route'), $article->text);
+    $regex = '#src="index.php\?([^"]*)option='._JOOM_OPTION.'([^"]*)#m';
+    $article->text = preg_replace_callback($regex, array($this, 'route'), $article->text);
   }
 
   /**
@@ -573,7 +573,7 @@ class plgContentJoomPlu extends JPlugin
    * @return  string
    * @since   3.0
    */
-  protected function route(&$matches)
+  protected function route($matches)
   {
     $url   = $matches[1].'option='._JOOM_OPTION.$matches[2].$this->_interface->getAmbit()->getItemid();
     $url   = str_replace('&amp;', '&', $url);
